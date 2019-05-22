@@ -14,6 +14,7 @@ body{
 /*Globales*/
  .contenedor{
  	max-width: 1200px;
+ 	width: 95%;/**esto deja un pequeño margen en la pantalla  veneficia la lectura **/
  	margin: 0 auto;
   }
 
@@ -116,5 +117,55 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 }
 .texto-header p{
 	font-size: 2.2rem;
+}
+
+/** Contenido Principal Home **/
+.contenido-principal{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.blog,
+.cursos{
+
+	flex-basis:0 0 100%;
+
+}
+.cursos{
+	order: -1;/* de esta forma cambias el orden de un bloque que corresponda a la clase**/
+
+}
+
+@media (min-width: 768px){
+ .contenido-principal{
+	justify-content:space-between;  
+
+ }
+
+.blog{
+	flex-basis:66.6%;
+     order: -1; /**para mover hacia la izqyuierdael texto con clase blog**/
+
+}
+
+.cursos{
+	flex-basis: calc(33.3% - 4rem);
+
+
+	}
+}
+/**opcional**/
+
+.entrada-blog{
+	display:flex;
+	justify-content: space-between;
+}
+.entrada-blog .imagen{
+	flex:0 0 40%;
+}
+.entrada-blog .contenido-blog{
+	flex:0 0 calc(60%-2rem);
+
 }
 
