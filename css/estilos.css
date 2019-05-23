@@ -252,9 +252,13 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 	font-weight: 700;
 	font-size: 2rem;
 }
-.curso p span {/*ngritas*/
+.curso p span, .descripcion {/*ngritas*/
 	font-weight: 400;
 }
+
+	/*es mas pesado un contenedor que tiene una etiqueta que uno que tiene una clase
+	
+
 /*foother*/
 .site-foother{
 	background-color:black;
