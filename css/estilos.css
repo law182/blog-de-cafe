@@ -118,6 +118,8 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 	text-align: center;
 	display: block;/*para que cada elemento tenga su propia linea*/
 	font-size: 1.8rem;
+	color: #ffffff;
+	text-decoration: none;
 }
 
 @media(min-width: 768px)/*esto para la navegacion en una tablet*/
@@ -235,4 +237,22 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 }
 .curso p span {/*ngritas*/
 	font-weight: 400;
+}
+/*foother*/
+.site-foother{
+	background-color:black;
+	padding: 3rem;
+	margin-top: 4rem;
+
+}
+.site-foother p{
+	color:#ffffff;
+	font-size: 4rem;
+	font-weight: 400;
+	font-family: 'PT Sans', sans-serif;
+	text-align: center;
+}
+.site-foother p span{
+	font-weight: 700;
+
 }
