@@ -47,6 +47,39 @@ body{
   	margin:0;
 
   }
+  /*botones*/
+
+  .btn{ 
+  	display:block;/*para que ocupe el espacio disponible*/
+  	text-align: center;
+  	padding: 1rem 3rem;
+  	margin: 2rem 0;
+  	color: #ffffff;
+  	text-decoration:none;
+  	font-family: 'PT Sans',sans-serif;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	font-size: 2rem;
+
+  }
+
+  @media(min-width: 768px ){
+  		.btn{
+  			display: inline-block; /*Display Bloc y de esa forma el ancho
+   va a ser definido por medio del pdding ya no va a ocupar todo el espacio*/
+
+  		}
+
+  }
+  .btn-primario{
+  	background-color: black;
+
+  }
+  .btn-secundario{
+  	background-color: #784dc3;
+
+  }
+
   /*Header*/
 @media(min-width: 768px) /**aqui se especifica el tamaño con
 esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña o grande sin que se vea deforme o feo*/
