@@ -27,6 +27,7 @@ body{
   }
   h2{
 	font-size: 4rem;
+	line-height: 1.2;
   }
   h3{
 	font-size: 3.2rem;
@@ -156,6 +157,7 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 	}
 }
 /**opcional**/
+/**
 
 .entrada-blog{
 	display:flex;
@@ -165,7 +167,39 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 	flex:0 0 40%;
 }
 .entrada-blog .contenido-blog{
-	flex:0 0 calc(60%-2rem);
+	flex:0 0 calc(60% - 2rem);
+
+}**/
+
+.entrada-blog{
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #e1e1e1;/* este va a servir como separacion entre cada fotoy articulo*/
 
 }
+.entrada-blog:last-of-type{
+	border:none;/*este es para que no parezca la division al final ya que no hay nada que separar*/
 
+}
+/**cuerpo**/
+
+.cursos-lista{/*con esto se elimina la viñeta y pequeña franja**/
+
+	padding: 0;
+	list-style: none;
+}
+.curso {/*para separar cada curso y gregar un paddig*/
+	padding-bottom: 3rem;
+	border-bottom: 1px solid #e1e1e1;
+
+}
+.curso:last-of-type{
+	border-bottom: none;/*se quita el ultimo border */
+}
+.curso p{
+	font-family: 'PT Sans' sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+}
+.curso p span {/*ngritas*/
+	font-weight: 400;
+}
