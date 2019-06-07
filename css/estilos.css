@@ -58,10 +58,16 @@ body{
   		justify-content: space-between;
   	
   	   }
+
+  	   .columnas-4{
+  	   	flex:0 0 calc(33.3%);
+  	   }
   	   .columnas-6{
   	   	flex: 0 0 calc(50% - 1rem);
   	   }
-  	  
+  	  .columnas-8{
+  	  	flex: 0 0 calc(66.6% - 1rem);
+  	  }
 
   }
   /*botones*/
@@ -240,6 +246,7 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 	list-style: none;
 }
 .curso {/*para separar cada curso y gregar un paddig*/
+	padding-top: 3rem;
 	padding-bottom: 3rem;
 	border-bottom: 1px solid #e1e1e1;
 
@@ -252,12 +259,12 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 	font-weight: 700;
 	font-size: 2rem;
 }
-.curso p span, .descripcion {/*ngritas*/
+.curso p.descripcion {/*ngritas*/
 	font-weight: 400;
 }
 
 	/*es mas pesado un contenedor que tiene una etiqueta que uno que tiene una clase
-	
+
 
 /*foother*/
 .site-foother{
@@ -265,7 +272,7 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 	padding: 3rem;
 	margin-top: 4rem;
 
-}
+} add -A
 .site-foother p{
 	color:#ffffff;
 	font-size: 4rem;
