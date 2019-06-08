@@ -249,10 +249,11 @@ esta se adapta el tamaño y el orden del contenido cuando la ventana es pequeña
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 	border-bottom: 1px solid #e1e1e1;
-
+/*con este bloque se crea una linea divisora entre cada curso*/
 }
 .curso:last-of-type{
-	border-bottom: none;/*se quita el ultimo border */
+	border-bottom: none;/*se quita el ultimo borde del las barritas que dividen
+	las secciones de los cursos, es decir la ultima linea divisora se va */
 }
 .curso p{
 	font-family: 'PT Sans' sans-serif;
